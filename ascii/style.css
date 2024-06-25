@@ -52,7 +52,7 @@ gap: 30px;
 
 }
 
-.content{
+.content{ 
 
 display: flex;
 flex-direction: column;
