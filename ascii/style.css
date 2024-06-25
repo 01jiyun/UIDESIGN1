@@ -1,0 +1,96 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+body{
+  font-family: "Josefin Sans";
+   font-size: 30px;
+    margin:0px 20px;
+    background-color: yellow;
+}
+
+.top{
+display: block;
+height:auto;
+
+
+.title{
+height:auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+
+padding: 10px 0px;
+
+font-style: 50px;
+
+
+}
+
+
+}
+
+
+.wrap{
+height:auto;
+width: auto;
+  
+display: flex;
+flex-direction: column;
+align-items: stretch;
+justify-content: stretch;
+gap: 30px;
+
+
+}
+
+.content{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+
+border-radius: 10px;
+
+transition: transform .2s;
+
+}
+
+prep{
+  position: relative;
+  width:100%;
+
+}
+
+.content2{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+
+border-radius: 10px;
+  background-color: white;
+transition: transform .2s;
+
+}
+.emoji{
+
+width: 500px;
+}
+.content:hover{
+  background-color: white;
+ transform: scale(1.01); 
+}
+

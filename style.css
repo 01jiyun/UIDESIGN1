@@ -1,0 +1,141 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+@font-face {
+font-family: "pretendard", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "pretendard", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+font-family: "pretendard", sans-serif;
+font-weight: 600;
+font-style: normal;
+
+font-family: "pretendard", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+html{
+    font-family: "pretendard";
+    font-weight: 500;
+    font-size: 16px;
+    color: #161A2E;
+
+
+}
+body{
+    margin: 0px calc(100% / 6);
+    background-color: #E0F0FF;
+}
+
+.top{
+  display: block;
+  height:auto;
+  text-align: center;
+
+  .title{
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 800px;
+    font-size: 1.5em;
+  }
+}
+
+body.dark {
+  background: #1c1c1c;
+  color: #fff;
+  .content{
+    color: #fff;
+  }
+  .content:hover{
+  background-color: #4c4c4c;
+  transform: scale(1.01); 
+    color: #fff;
+  }
+}
+
+
+.wrap{
+height:auto;
+width: auto;
+  
+display: flex;
+
+align-items: stretch;
+justify-content: stretch;
+flex-wrap: wrap;
+gap: 30px;
+
+}
+
+h3{
+  font-size: 1.5em;
+}
+.content{
+text-decoration: none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 10px;
+
+border-radius: 10px;
+
+transition: transform .2s;
+color: #161A2E;
+font-size: 1.4em;
+
+}
+
+.content:hover{
+  background-color: white;
+ transform: scale(1.01); 
+}
+
+#darkmode{
+position: fixed;
+left: 50%;
+bottom: 100px;
+transform: translate(-50%, -50%);
+padding: 10px;
+border-radius: 10px;
+
+transition: transform .2s;
+color: #fff;
+font-size: 20px;
+background-color: #161A2E;
+
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+        margin: 0px calc(100% / 10);
+
+        .top{
+          .title{
+            align-items: flex-start;
+          }
+        }
+
+        .wrap{
+          display: block;
+        }
+    }
+}

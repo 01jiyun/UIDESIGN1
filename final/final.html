@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> MYKPI</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" href="asset/logo.png" type="image/x-icon">
+ 
+
+<body>
+
+  <!-- this is where my code is-->
+
+ <div id="sky"> </div>
+  
+      <div class="top">
+        <div class="title">
+
+          <div class="left">
+           <img class="svg-logo" src="asset/logo.svg" alt="logo Icon" >
+           <div class="logo" > My KPI</div>
+         </div>
+
+        <div class="right">  
+          <div class="img-profile"> </div>
+        </div>
+     
+
+        </div>
+      </div>
+
+      <div class="medium">
+
+        <div id="today" >Today</div>
+        <div id="date" class="date"></div>
+        <div class="input">
+
+          <div class="styled-select" >
+
+            <select id="categorySelect"  onchange="toggleButtonState()">
+                <option class="default" value="" selected disabled>Select</option>
+                <option value="category-1">January</option>
+                <option value="category-2">Feburary</option>
+                <option value="category-3">March</option>
+                <option value="category-4">April</option>
+                <option value="category-5">May</option>
+                <option value="category-6">June</option>
+                <option value="category-7">July</option>
+                <option value="category-8">August</option>
+                <option value="category-9">September</option>
+                <option value="category-10">October</option>
+                <option value="category-11">November</option>
+                <option value="category-12">December</option>
+            </select>
+            <img class="svg-arrow" src="asset/svg-arrow.svg" alt="logo Icon">
+          </div>
+
+          <div class="write">
+             <input type="text" id="textInput" placeholder="What is your goal?" oninput="toggleButtonState()" >
+              <button class="addButton" onclick="saveInput(); showPopup();" disabled>Okay</button>
+          </div>
+        </div>
+
+        <section class="section1">
+          <div class="section1-top">
+            <div class="title">Goals</div>
+            <div class="goalsNumber"><div id="goalsCount">0</div></div>
+          </div>
+          <div class="month-tree">
+            
+          
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">January</div>
+                <ul id="category-1" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">Feburary</div>
+                <ul id="category-2" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">March</div>
+                <ul id="category-3" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">April</div>
+                <ul id="category-4" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">May</div>
+                <ul id="category-5" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">June</div>
+                <ul id="category-6" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">July</div>
+                <ul id="category-7" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">August</div>
+                <ul id="category-8" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">September</div>
+                <ul id="category-9" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">October</div>
+                <ul id="category-10" class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">November</div>
+                <ul id="category-11"class="savedInputsList"></ul>
+              </div>
+             </div>
+
+             <div class="month">
+              <div class="dividing-line"></div>
+              <div class="content">
+                <div class="title">December</div>
+                <ul id="category-12" class="savedInputsList"></ul>
+              </div>
+             </div>
+          </div>
+          
+
+
+        </section>
+
+
+      </div>
+
+    <div class="popup">
+      <img src="./asset/goal.svg" alt="svg-goal">
+      <h3>Congratulation for you</h3>
+      <p id="popupMessage">Today, one goal has been added to<br>your journey towards success.
+        </p>
+      <button onclick= "closePopup();" >Close</button>
+    </div>
+
+  
+
+  
+  <script src="script.js"></script>
+
+
+</body>
+  
+</html>
